@@ -5,9 +5,6 @@ class Dockingstation
     
     def dock(bike)
         @bike = bike
-    end
-
-    def see_bike
         return "Bike docked: #{@bike}"
     end
 

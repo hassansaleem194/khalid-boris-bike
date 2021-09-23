@@ -12,9 +12,9 @@ describe Dockingstation do
     expect(my_bike.is_a? Bike).to eq true
   end
   
-  # it 'docks a bike' do
-  #   dock_bike = Dockingstation.new
-  #   bike_1 = dock_bike.dock("red bike")
-  #   expect(bike_1).to eq "Bike docked: red bike"
-  # end
+  it 'docks a bike' do
+    docking_station = Dockingstation.new
+    bike = "red bike"
+    expect(docking_station.dock(bike)).to eq "Bike docked: red bike"
+  end
 end
